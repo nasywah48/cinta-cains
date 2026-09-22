@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <!-- REMIXICON -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Cinta Sains</title>
+</head>
+
+<body class="bg-white text-gray-900 font-sans antialiased selection:bg-science-yellow">
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 w-full bg-white px-4 sm:px-6 lg:px-8 py-4 shadow-sm">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+            <!-- Logo Area -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div
+                    class="w-12 h-12 bg-white rounded-xl overflow-hidden flex items-center justify-center shadow-[2px_2px_8px_rgba(0,0,0,0.06)] group-hover:rotate-6 transition-transform">
+                    <img src="assets/logo.png" alt="Cinta Sains Logo" class="w-full h-full object-contain p-0.5">
+                </div>
+
+                <span class="text-xl font-black tracking-tight text-gray-900 uppercase">
+                    Cinta <span class="text-science-lightblue">Sains</span>
+                </span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center gap-8 font-black text-sm uppercase tracking-wide">
+                <a href="#vision-goals"
+                    class="text-gray-600 hover:text-science-pink transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-science-pink hover:after:w-full after:transition-all">
+                    Tentang Kami
+                </a>
+
+                <a href="#featured-programs"
+                    class="text-gray-600 hover:text-science-lightblue transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-science-lightblue hover:after:w-full after:transition-all">
+                    Program Unggulan
+                </a>
+
+                <a href="#programs"
+                    class="text-gray-600 hover:text-science-orange transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-science-orange hover:after:w-full after:transition-all">
+                    Klub Sains
+                </a>
+            </div>
+
+            <!-- Desktop Button -->
+            <div class="hidden md:block">
+                <a href="#contact"
+                    class="inline-flex items-center gap-2 px-6 py-3 bg-science-green text-white font-black text-sm rounded-xl shadow-[0_4px_14px_rgba(0,166,82,0.3)] hover:scale-102 hover:shadow-[0_6px_20px_rgba(0,166,82,0.4)] transition-all">
+                    <i class="ri-whatsapp-line text-base"></i>
+                    Hubungi Kami
+                </a>
+            </div>
+
+            <!-- Mobile Menu -->
+            <details class="relative md:hidden" id="mobile-menu">
+                <summary
+                    class="list-none cursor-pointer p-3 bg-gray-50 text-black rounded-xl hover:bg-gray-100 transition-colors">
+                    <i class="ri-menu-4-line text-xl font-bold"></i>
+                </summary>
+
+                <div class="absolute right-0 top-16 w-64 bg-white rounded-2xl shadow-xl border border-gray-100 p-4">
+                    <div class="flex flex-col gap-2 font-black text-sm uppercase tracking-wide">
+
+                        <a href="#vision-goals"
+                            class="mobile-menu-link px-4 py-3 rounded-xl text-gray-600 hover:bg-pink-50 hover:text-science-pink transition-colors">
+                            Tentang Kami
+                        </a>
+
+                        <a href="#featured-programs"
+                            class="mobile-menu-link px-4 py-3 rounded-xl text-gray-600 hover:bg-blue-50 hover:text-science-lightblue transition-colors">
+                            Program Unggulan
+                        </a>
+
+                        <a href="#programs"
+                            class="mobile-menu-link px-4 py-3 rounded-xl text-gray-600 hover:bg-orange-50 hover:text-science-orange transition-colors">
+                            Klub Sains
+                        </a>
+
+                        <div class="h-px bg-gray-100 my-1"></div>
+
+                        <a href="#contact"
+                            class="mobile-menu-link flex items-center justify-center gap-2 px-4 py-3 bg-science-green text-white rounded-xl hover:opacity-90 transition-opacity">
+                            <i class="ri-whatsapp-line"></i>
+                            Hubungi Kami
+                        </a>
+
+                    </div>
+                </div>
+            </details>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home"
+        class="relative min-h-screen flex items-center justify-center overflow-hidden bg-white pt-16 pb-20 px-4 sm:px-6 lg:px-8">
+
+        <div
+            class="absolute top-10 left-10 w-24 h-24 bg-science-yellow rounded-full blur-2xl opacity-40 pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-16 right-10 w-36 h-36 bg-science-lightblue rounded-full blur-3xl opacity-30 pointer-events-none">
+        </div>
+        <div
+            class="absolute top-1/3 right-1/4 w-16 h-16 bg-science-pink rounded-full blur-xl opacity-20 pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+
+            <div class="space-y-6 text-center lg:text-left">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full border-4 border-black bg-science-yellow font-black text-sm tracking-wide uppercase shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                    <i class="ri-flask-line text-lg text-science-red animate-pulse"></i>
+                    Serunya Eksplorasi Sains!
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-gray-900 leading-tight">
+                    Tumbuhkan Cinta <br class="hidden sm:inline">
+                    Sains Sejak <span
+                        class="underline decoration-science-lightblue decoration-wavy decoration-3">Dini!</span>
+                </h1>
+
+                <p class="text-lg md:text-xl max-w-xl mx-auto lg:mx-0 font-bold italic text-science-darkgreen">
+                    "Sains... semua jadi mungkin"
+                </p>
+
+                <p class="text-lg md:text-xl text-gray-700 max-w-xl mx-auto lg:mx-0 font-medium">
+                    Ekstrakurikuler sains interaktif yang menyulap rasa penasaran anak-anak TK & SD menjadi eksperimen
+                    seru, aman, dan tak terlupakan.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                    <a href="#contact"
+                        class="w-full sm:w-auto text-center px-8 py-4 bg-science-orange text-white font-black text-lg rounded-2xl border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all">
+                        Daftar Kelas Sekarang
+                    </a>
+
+                    <a href="#programs"
+                        class="w-full sm:w-auto text-center px-8 py-4 bg-white text-black font-bold text-lg rounded-2xl border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:bg-science-lightblue hover:text-white transition-all">
+                        Lihat Program Kami
+                    </a>
+                </div>
+
+                <div class="pt-6 flex flex-wrap justify-center lg:justify-start gap-6 text-sm font-bold text-gray-600">
+                    <div class="flex items-center gap-2">
+                        <span class="text-science-green text-xl">✓</span> 100% Eksperimen Aman
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-science-pink text-xl">✦</span> Mentor Berpengalaman
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative w-full max-w-md md:max-w-lg mx-auto lg:max-w-none">
+                <div class="absolute inset-0 bg-science-green rounded-3xl transform rotate-3 border-4 border-black">
+                </div>
+                <div class="absolute inset-0 bg-science-pink rounded-3xl transform -rotate-2 border-4 border-black">
+                </div>
+
+                <!-- Right Side: Video Container -->
+                <div class="relative w-full max-w-md md:max-w-lg mx-auto lg:max-w-none">
+                    <!-- Decorative Frame for Playful Vibe -->
+                    <div class="absolute inset-0 bg-science-green rounded-3xl transform rotate-3 border-4 border-black">
+                    </div>
+                    <div class="absolute inset-0 bg-science-pink rounded-3xl transform -rotate-2 border-4 border-black">
+                    </div>
+
+                    <!-- Main Video Container Box -->
+                    <div
+                        class="relative bg-white border-4 border-black rounded-3xl shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] overflow-hidden aspect-video flex">
+
+                        <!-- VIDEO -->
+
+                        <video class="w-full h-full object-cover" autoplay loop muted playsinline preload="auto"
+                            onloadedmetadata="this.play()" poster="assets/video-thumbnail.png">
+                            <source src="assets/hero-video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Vision Mission & Goals Section -->
+    <section id="vision-goals" class="py-20 bg-science-green/10 px-4 sm:px-6 lg:px-8 border-t-4 border-black relative">
+
+        <!-- Whimsical Background Grid Line Effect -->
+        <div
+            class="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-size:14px_24px pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto space-y-16 relative z-10">
+
+            <!-- STEM Vision & Mission Card (Soft Light Blue Background Tint) -->
+            <div
+                class="bg-white border-4 border-black rounded-3xl p-8 md:p-12 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] relative overflow-hidden">
+                <!-- Whimsical Molecular Graphic Element -->
+                <div
+                    class="absolute -top-4 -right-4 text-8xl text-science-lightblue/10 font-black select-none pointer-events-none transform rotate-12">
+                    <i class="ri-node-tree"></i>
+                </div>
+
+                <div class="max-w-3xl space-y-4">
+                    <span
+                        class="inline-block bg-science-lightblue text-white border-2 border-black font-black px-4 py-1 rounded-xl text-xs uppercase tracking-wider shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                        Visi & Misi Kami
+                    </span>
+                    <h2 class="text-3xl sm:text-5xl font-black text-gray-900 tracking-tight uppercase">
+                        S.T.E.M
+                    </h2>
+                    <p class="text-lg md:text-xl text-gray-800 font-bold leading-relaxed">
+                        Sains (<span class="text-science-red">Science</span>), Teknologi (<span
+                            class="text-science-lightblue">Technology</span>), Rekayasa (<span
+                            class="text-science-orange">Engineering</span>), dan Matematika (<span
+                            class="text-science-amber">Mathematics</span>) - STEM - masih menjadi hal yang menakutkan
+                        bagi para siswa.
+                    </p>
+                    <div
+                        class="pt-2 flex items-center gap-2 text-science-darkgreen font-black text-sm uppercase tracking-wide">
+                        Cinta Sains hadir untuk mengubah ketakutan itu menjadi kegembiraan!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Our Goals Segment (White Backdrop with Colorful Number Blocks) -->
+            <div class="space-y-8">
+                <div class="text-center lg:text-left space-y-2">
+                    <span
+                        class="inline-block bg-science-pink text-white border-2 border-black font-black px-3 py-1 rounded-lg text-xs uppercase tracking-wider shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                        Target & Tujuan
+                    </span>
+                    <h3 class="text-2xl sm:text-4xl font-black text-gray-900 uppercase tracking-tight">
+                        3 Nilai Utama Pengembangan Anak
+                    </h3>
+                </div>
+
+                <!-- 3-Column Goals Layout -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <!-- Goal 1 -->
+                    <div
+                        class="bg-white border-4 border-black rounded-2xl p-6 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] flex flex-col justify-between group hover:bg-science-yellow/80 transition-all">
+                        <div class="space-y-4">
+                            <!-- Number Block -->
+                            <div
+                                class="w-14 h-14 bg-science-yellow text-black border-4 border-black font-black text-2xl flex items-center justify-center rounded-xl shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] group-hover:scale-105 transition-transform">
+                                1
+                            </div>
+                            <p class="text-gray-800 font-bold text-base leading-relaxed">
+                                Mengenalkan pembelajaran yang sederhana dan menyenangkan pada siswa jenjang Pendidikan
+                                dini (PAUD, TK, dan SD).
+                            </p>
+                        </div>
+                        <div class="pt-6 text-right text-gray-300 group-hover:text-science-amber transition-colors">
+                            <i class="ri-microscope-line text-3xl"></i>
+                        </div>
+                    </div>
+
+                    <!-- Goal 2 -->
+                    <div
+                        class="bg-white border-4 border-black rounded-2xl p-6 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] flex flex-col justify-between group hover:bg-science-pink/80 transition-all">
+                        <div class="space-y-4">
+                            <!-- Number Block -->
+                            <div
+                                class="w-14 h-14 bg-science-pink text-white border-4 border-black font-black text-2xl flex items-center justify-center rounded-xl shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] group-hover:scale-105 transition-transform">
+                                2
+                            </div>
+                            <p class="text-gray-800 font-bold text-base leading-relaxed">
+                                Meningkatkan keterampilan motorik kasar dan motorik halus siswa.
+                            </p>
+                        </div>
+                        <div class="pt-6 text-right text-gray-300 group-hover:text-black/50 transition-colors">
+                            <i class="ri-hand-heart-line text-3xl"></i>
+                        </div>
+                    </div>
+
+                    <!-- Goal 3 -->
+                    <div
+                        class="bg-white border-4 border-black rounded-2xl p-6 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] flex flex-col justify-between group hover:bg-science-green/80 transition-all">
+                        <div class="space-y-4">
+                            <!-- Number Block -->
+                            <div
+                                class="w-14 h-14 bg-science-green text-white border-4 border-black font-black text-2xl flex items-center justify-center rounded-xl shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] group-hover:scale-105 transition-transform">
+                                3
+                            </div>
+                            <p class="text-gray-800 font-bold text-base leading-relaxed">
+                                Mengembangkan keterampilan interpersonal (soft skill) melalui diskusi untuk melatih
+                                komunikasi, berani mengungkapkan pendapat dan berfikir kritis dari para siswa.
+                            </p>
+                        </div>
+                        <div class="pt-6 text-right text-gray-300 group-hover:text-science-darkgreen transition-colors">
+                            <i class="ri-chat-voice-line text-3xl"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Program Unggulan Section -->
+    <section id="featured-programs"
+        class="py-20 bg-science-darkgreen text-white px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+
+        <!-- Whimsical Science Floating Elements in Background -->
+        <div class="absolute top-12 left-6 text-7xl text-white/5 select-none pointer-events-none rotate-12">
+            <i class="ri-flask-fill"></i>
+        </div>
+        <div class="absolute bottom-12 right-6 text-8xl text-white/5 select-none pointer-events-none -rotate-12">
+            <i class="ri-bubble-chart-line"></i>
+        </div>
+
+        <div class="max-w-7xl mx-auto space-y-12 relative z-10">
+
+            <!-- Section Title Box -->
+            <div class="text-center max-w-2xl mx-auto space-y-3">
+                <span
+                    class="inline-block bg-science-yellow text-black font-black px-4 py-1.5 rounded-xl text-xs uppercase tracking-wide shadow-sm">
+                    Program Unggulan
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-black uppercase tracking-tight">
+                    Eksperimen Seru, Percobaan Asyik!
+                </h2>
+            </div>
+
+            <!-- Main Content Layout (Inspired by the Brochure) -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center pt-4">
+
+                <!-- Left Side: Irasutoya / Science Image Container -->
+                <div class="lg:col-span-5 relative max-w-md mx-auto lg:max-w-none w-full">
+                    <!-- Smooth Ambient Glow Frame Background -->
+                    <div class="absolute inset-0 bg-science-amber rounded-3xl transform -rotate-3 opacity-90"></div>
+
+                    <!-- Image Wrapper Box (No padding, overflow hidden to contain the asset image flawlessly) -->
+                    <div class="relative bg-white rounded-3xl shadow-xl overflow-hidden aspect-square">
+
+                        <!-- Background Asset: Fills the entire container frame completely -->
+                        <img src="assets/program-image.jpg" alt="Science Program Class"
+                            class="w-full h-full object-cover">
+
+                        <!-- Decorative Overlay Floating Icons via Remix Icon -->
+                        <div class="absolute top-4 left-4 text-white drop-shadow-md text-3xl z-20"><i
+                                class="ri-test-tube-line"></i></div>
+                        <div class="absolute bottom-4 right-4 text-white drop-shadow-md text-3xl z-20"><i
+                                class="ri-microscope-line"></i></div>
+
+                        <!-- Karakter Irasutoya: Duduk pas di pojok kanan bawah -->
+                        <!-- Karakter Irasutoya dengan Efek Gabungan (Lift + Scale) -->
+                        <img src="assets/irasutoya-scientists.png" alt="Irasutoya Scientist"
+                            class="absolute bottom-0 left-2 w-5/12 max-w-[180px] object-contain z-20 drop-shadow-[0_4px_6px_rgba(0,0,0,0.3)] transition-all duration-300 ease-out origin-bottom hover:scale-105 hover:-translate-y-2 hover:drop-shadow-[0_12px_20px_rgba(0,0,0,0.4)]">
+
+                        <!-- Badge Text: Dipindah ke kiri bawah -->
+                        <div class="absolute bottom-4 right-4 z-20">
+                            <span
+                                class="text-[10px] sm:text-xs font-black text-science-darkgreen uppercase tracking-wider bg-science-yellow px-3 py-1.5 rounded-full shadow-md">
+                                Klub Cinta Sains
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: White Information Clipboard Sheets -->
+                <div class="lg:col-span-7 space-y-6">
+
+                    <!-- Point 1 -->
+                    <div
+                        class="bg-white text-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-xl hover:scale-[1.01] transition-all flex items-start gap-4">
+                        <div
+                            class="p-3 rounded-xl bg-science-lightblue/10 text-science-lightblue text-2xl shrink-0 flex items-center justify-center">
+                            <i class="ri-bubble-chart-fill"></i>
+                        </div>
+                        <div class="space-y-1">
+                            <h3 class="text-xl font-black text-gray-900">Eksperimen Sains Interaktif</h3>
+                            <p class="text-gray-600 font-medium text-sm leading-relaxed">
+                                Belajar melalui praktik langsung yang seru, aman, dan menyenangkan untuk mengenalkan
+                                keajaiban reaksi alam sekitar.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Point 2 -->
+                    <div
+                        class="bg-white text-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-xl hover:scale-[1.01] transition-all flex items-start gap-4">
+                        <div
+                            class="p-3 rounded-xl bg-science-pink/10 text-science-pink text-2xl shrink-0 flex items-center justify-center">
+                            <i class="ri-lightbulb-flash-fill"></i>
+                        </div>
+                        <div class="space-y-1">
+                            <h3 class="text-xl font-black text-gray-900">Kreativitas & Berpikir Kritis</h3>
+                            <p class="text-gray-600 font-medium text-sm leading-relaxed">
+                                Melatih logika berpikir, kreativitas, rasa ingin tahu yang tinggi, serta mengasah
+                                kemampuan awal anak dalam memecahkan masalah.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Point 3 -->
+                    <div
+                        class="bg-white text-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-xl hover:scale-[1.01] transition-all flex items-start gap-4">
+                        <div
+                            class="p-3 rounded-xl bg-science-yellow/20 text-science-amber text-2xl shrink-0 flex items-center justify-center">
+                            <i class="ri-award-fill"></i>
+                        </div>
+                        <div class="space-y-1">
+                            <h3 class="text-xl font-black text-gray-900">Proyek Sains & Tantangan Edukatif</h3>
+                            <p class="text-gray-600 font-medium text-sm leading-relaxed">
+                                Membuat karya sains sederhana bawa pulang, berpartisipasi dalam tantangan tim kecil, dan
+                                mendapatkan sertifikat penghargaan motivasi.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- All Activity Tracks (Klub Sains) - Modern Comic Section -->
+    <section id="programs" class="py-20 bg-white px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+
+        <!-- Blueprint Grid Pattern Background -->
+        <div
+            class="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px] pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto space-y-12 relative z-10">
+
+            <!-- Section Title Area -->
+            <div class="text-center max-w-2xl mx-auto space-y-3">
+                <span
+                    class="inline-block bg-science-pink text-white font-black px-4 py-1.5 rounded-xl text-xs uppercase tracking-wide shadow-sm">
+                    Pilihan Kelas
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-black text-gray-900 uppercase tracking-tight">
+                    Eksplorasi Kelas Sains
+                </h2>
+                <p class="text-gray-600 font-medium text-base">
+                    Pilih petualangan sainsmu sendiri dan lihat langsung keseruan eksperimennya!
+                </p>
+            </div>
+
+            <!-- Comic Strip Grid Layout (2 Kolom Kiri-Kanan Sejajar) -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 pt-4 items-stretch">
+
+                <!-- PANEL 1: Kimia Seru (Lebar: 7 Kolom) -->
+                <div
+                    class="md:col-span-7 bg-science-red text-white rounded-3xl p-6 sm:p-8 shadow-xl hover:scale-[1.01] hover:-translate-y-1 transition-all duration-300 relative overflow-hidden flex flex-col justify-between min-h-[320px]">
+                    <div class="grid grid-cols-1 sm:grid-cols-12 gap-6 items-center h-full w-full">
+                        <!-- Sisi Kiri: Teks -->
+                        <div class="sm:col-span-7 space-y-3">
+                            <span
+                                class="inline-block text-[10px] font-black uppercase tracking-wider bg-white text-science-red px-2.5 py-1 rounded-md shadow-sm">
+                                Usia 4-9 Tahun
+                            </span>
+                            <h3 class="text-2xl sm:text-3xl font-black uppercase tracking-tight leading-none">Reaksi
+                                Warna & Lendir</h3>
+                            <p class="text-white/90 text-xs sm:text-sm font-medium leading-relaxed">
+                                Mengenal reaksi kimia mendasar lewat eksperimen pencampuran warna ajaib dan slime aman.
+                            </p>
+                        </div>
+                        <!-- Sisi Kanan: Foto Dokumentasi (Full Size / No Crop) -->
+                        <div
+                            class="sm:col-span-5 sm: h-full min-h-[180px] sm:min-h-0 rounded-2xl shadow-md overflow-hidden">
+                            <img src="assets/kelas_1.png" alt="Dokumentasi Eksperimen Fisika"
+                                class="w-full h-full object-cover object-center">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PANEL 2: Fisika Asyik (Lebar: 5 Kolom) -->
+                <div
+                    class="md:col-span-5 bg-science-lightblue text-white rounded-3xl p-6 sm:p-8 shadow-xl hover:scale-[1.01] hover:-translate-y-1 transition-all duration-300 relative overflow-hidden flex flex-col justify-between min-h-[320px]">
+                    <div class="grid grid-cols-1 sm:grid-cols-12 gap-6 items-center h-full w-full">
+                        <!-- Sisi Kiri: Teks -->
+                        <div class="sm:col-span-7 space-y-3">
+                            <span
+                                class="inline-block text-[10px] font-black uppercase tracking-wider bg-white text-science-lightblue px-2.5 py-1 rounded-md shadow-sm">
+                                Usia 5-10 Tahun
+                            </span>
+                            <h3 class="text-2xl font-black uppercase tracking-tight leading-none">Magnet & Udara</h3>
+                            <p class="text-white/90 text-xs sm:text-sm font-medium leading-relaxed">
+                                Menerbangkan roket balon udara mini dan sirkuit magnet lab!
+                            </p>
+                        </div>
+                        <!-- Sisi Kanan: Foto Dokumentasi -->
+                        <div
+                            class="sm:col-span-5 h-80 sm:h-68 rounded-2xl shadow-md overflow-hidden">
+                            <img src="assets/kelas_2.png" alt="Dokumentasi Eksperimen Fisika"
+                                class="w-full h-full object-cover object-center">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PANEL 3: Dunia Hayati (Lebar: 5 Kolom) -->
+                <div
+                    class="md:col-span-5 bg-science-green text-white rounded-3xl p-6 sm:p-8 shadow-xl hover:scale-[1.01] hover:-translate-y-1 transition-all duration-300 relative overflow-hidden flex flex-col justify-between min-h-[320px]">
+                    <div class="grid grid-cols-1 sm:grid-cols-12 gap-6 items-center h-full w-full">
+                        <!-- Sisi Kiri: Teks -->
+                        <div class="sm:col-span-7 space-y-3">
+                            <span
+                                class="inline-block text-[10px] font-black uppercase tracking-wider bg-white text-science-green px-2.5 py-1 rounded-md shadow-sm">
+                                Usia 4-8 Tahun
+                            </span>
+                            <h3 class="text-2xl font-black uppercase tracking-tight leading-none">Detektif Alam</h3>
+                            <p class="text-white/90 text-xs sm:text-sm font-medium leading-relaxed">
+                                Mengamati struktur daun, siklus serangga, dan menanam benih ajaib.
+                            </p>
+                        </div>
+                        <!-- Sisi Kanan: Foto Dokumentasi -->
+                        <div
+                            class="sm:col-span-5 h-80 sm:h-68 rounded-2xl shadow-md overflow-hidden">
+                            <img src="assets/kelas_3.png" alt="Dokumentasi Eksperimen Fisika"
+                                class="w-full h-full object-cover object-center">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PANEL 4: Luar Angkasa (Lebar: 7 Kolom) -->
+                <div
+                    class="md:col-span-7 bg-science-orange text-white rounded-3xl p-6 sm:p-8 shadow-xl hover:scale-[1.01] hover:-translate-y-1 transition-all duration-300 relative overflow-hidden flex flex-col justify-between min-h-[320px]">
+                    <div class="grid grid-cols-1 sm:grid-cols-12 gap-6 items-center h-full w-full">
+                        <!-- Sisi Kiri: Teks -->
+                        <div class="sm:col-span-7 space-y-3">
+                            <span
+                                class="inline-block text-[10px] font-black uppercase tracking-wider bg-white text-science-orange px-2.5 py-1 rounded-md shadow-sm">
+                                Usia 6-12 Tahun
+                            </span>
+                            <h3 class="text-2xl sm:text-3xl font-black uppercase tracking-tight leading-none">Rasi
+                                Bintang & Planet</h3>
+                            <p class="text-white/90 text-xs sm:text-sm font-medium leading-relaxed">
+                                Membuat peta rasi bintang yang menyala dalam gelap lewat seni kreatif seru.
+                            </p>
+                        </div>
+                        <!-- Sisi Kanan: Foto Dokumentasi -->
+                        <div
+                            class="sm:col-span-5 h-80 sm:h-68 rounded-2xl shadow-md overflow-hidden">
+                            <img src="assets/kelas_4.png" alt="Dokumentasi Eksperimen Fisika"
+                                class="w-full h-full object-cover object-center">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Steps Section -->
+    <section id="how-to-join" class="py-20 bg-[#FFDE4D] text-gray-900 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+
+        <!-- Decorative Pop-Art Abstract Circles -->
+        <div class="absolute -top-10 -left-10 w-40 h-40 bg-white/20 rounded-full blur-2xl pointer-events-none"></div>
+        <div
+            class="absolute -bottom-20 -right-10 w-60 h-60 bg-science-pink/10 rounded-full blur-3xl pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto space-y-16 relative z-10">
+
+            <!-- Section Header -->
+            <div class="text-center max-w-2xl mx-auto space-y-3">
+                <span
+                    class="inline-block bg-gray-900 text-white font-black px-4 py-1.5 rounded-xl text-xs uppercase tracking-wide shadow-sm">
+                    Registrasi Mudah
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-black uppercase tracking-tight text-gray-900">
+                    3 Langkah Mudah Bergabung
+                </h2>
+                <p class="text-gray-800 font-semibold text-base">
+                    Mulai petualangan ilmiah si kecil hanya dalam hitungan menit!
+                </p>
+            </div>
+
+            <!-- 3-Column Horizontal Steps Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-4 items-stretch">
+
+                <!-- STEP 1 -->
+                <div
+                    class="bg-white rounded-3xl p-8 shadow-[0_10px_30px_rgba(0,0,0,0.06)] hover:scale-[1.02] hover:-translate-y-1 transition-all duration-300 relative overflow-hidden flex flex-col justify-between min-h-[220px] group">
+                    <!-- Massive Background Number Overlay -->
+                    <div
+                        class="absolute -top-6 -right-4 text-8xl font-black text-gray-100 group-hover:text-science-red/10 transition-colors select-none">
+                        01
+                    </div>
+
+                    <div class="space-y-4 relative z-10">
+                        <div
+                            class="w-12 h-12 rounded-2xl bg-science-red text-white flex items-center justify-center text-xl font-bold shadow-md">
+                            <i class="ri-chat-smile-3-line"></i>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="text-xl font-black uppercase tracking-tight">Hubungi Admin</h3>
+                            <p class="text-gray-600 text-sm font-medium leading-relaxed">
+                                Klik tombol WhatsApp untuk langsung terhubung dengan tim admin ramah kami.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 2 -->
+                <div
+                    class="bg-white rounded-3xl p-8 shadow-[0_10px_30px_rgba(0,0,0,0.06)] hover:scale-[1.02] hover:-translate-y-1 transition-all duration-300 relative overflow-hidden flex flex-col justify-between min-h-[220px] group">
+                    <!-- Massive Background Number Overlay -->
+                    <div
+                        class="absolute -top-6 -right-4 text-8xl font-black text-gray-100 group-hover:text-science-lightblue/10 transition-colors select-none">
+                        02
+                    </div>
+
+                    <div class="space-y-4 relative z-10">
+                        <div
+                            class="w-12 h-12 rounded-2xl bg-science-lightblue text-white flex items-center justify-center text-xl font-bold shadow-md">
+                            <i class="ri-file-list-3-line"></i>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="text-xl font-black uppercase tracking-tight">Pilih Jadwal & Kelas</h3>
+                            <p class="text-gray-600 text-sm font-medium leading-relaxed">
+                                Pilih jenis kelas eksperimen yang diinginkan serta sesi jadwal trial atau reguler yang
+                                tersedia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 3 -->
+                <div
+                    class="bg-white rounded-3xl p-8 shadow-[0_10px_30px_rgba(0,0,0,0.06)] hover:scale-[1.02] hover:-translate-y-1 transition-all duration-300 relative overflow-hidden flex flex-col justify-between min-h-[220px] group">
+                    <!-- Massive Background Number Overlay -->
+                    <div
+                        class="absolute -top-6 -right-4 text-8xl font-black text-gray-100 group-hover:text-science-green/10 transition-colors select-none">
+                        03
+                    </div>
+
+                    <div class="space-y-4 relative z-10">
+                        <div
+                            class="w-12 h-12 rounded-2xl bg-science-green text-white flex items-center justify-center text-xl font-bold shadow-md">
+                            <i class="ri-rocket-line"></i>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="text-xl font-black uppercase tracking-tight">Mulai Eksperimen!</h3>
+                            <p class="text-gray-600 text-sm font-medium leading-relaxed">
+                                Datang ke laboratorium, pakai jas lab mini kamu, dan mari kita mulai bersenang-senang!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Call To Action Button below steps -->
+            <div class="text-center pt-4">
+                <a href="#contact"
+                    class="inline-flex items-center gap-3 bg-gray-900 hover:bg-black text-white font-black px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 group uppercase tracking-wider text-sm">
+                    Daftar Sekarang Juga
+                    <i
+                        class="ri-whatsapp-line text-lg text-emerald-400 transform group-hover:scale-110 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ & Footer Section -->
+    <section id="faq-footer" class="bg-white relative overflow-hidden">
+
+        <!-- 1. FAQ Area (Top Half) -->
+        <div class="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+
+                <!-- FAQ Title Block -->
+                <div class="lg:col-span-4 space-y-4">
+                    <span
+                        class="inline-block bg-science-lightblue text-white font-black px-4 py-1.5 rounded-xl text-xs uppercase tracking-wide">
+                        Pertanyaan Umum
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-tight text-gray-900 leading-none">
+                        Sering Ditanyakan
+                    </h2>
+                    <p class="text-gray-600 font-medium text-sm sm:text-base leading-relaxed">
+                        Punya pertanyaan seputar kelas kami? Berikut beberapa info penting yang sering ditanyakan orang
+                        tua.
+                    </p>
+                </div>
+
+                <!-- FAQ Items Block -->
+                <div class="lg:col-span-8 space-y-4">
+
+                    <!-- Q1 -->
+                    <div class="bg-gray-50 rounded-2xl p-6 transition-all duration-300 hover:bg-gray-100">
+                        <h4 class="text-base font-black uppercase text-gray-900 flex items-start gap-3">
+                            <span class="text-science-red font-black">Q.</span>
+                            Apakah anak harus membawa peralatan sendiri?
+                        </h4>
+                        <p class="text-gray-600 text-sm font-medium mt-2 pl-6 leading-relaxed">
+                            Tidak perlu! Semua peralatan laboratorium, bahan kimia aman, jas lab mini, dan kacamata
+                            pelindung sudah disediakan lengkap oleh kami di lokasi.
+                        </p>
+                    </div>
+
+                    <!-- Q2 -->
+                    <div class="bg-gray-50 rounded-2xl p-6 transition-all duration-300 hover:bg-gray-100">
+                        <h4 class="text-base font-black uppercase text-gray-900 flex items-start gap-3">
+                            <span class="text-science-green font-black">Q.</span>
+                            Apakah eksperimennya aman untuk anak usia 4 tahun?
+                        </h4>
+                        <p class="text-gray-600 text-sm font-medium mt-2 pl-6 leading-relaxed">
+                            Sangat aman. Seluruh eksperimen dirancang menggunakan bahan organik/food-grade non-toxic dan
+                            dipandu ketat oleh instruktur berpengalaman dengan rasio pengawasan yang aman.
+                        </p>
+                    </div>
+
+                    <!-- Q3 -->
+                    <div class="bg-gray-50 rounded-2xl p-6 transition-all duration-300 hover:bg-gray-100">
+                        <h4 class="text-base font-black uppercase text-gray-900 flex items-start gap-3">
+                            <span class="text-science-orange font-black">Q.</span>
+                            Apakah bisa pindah jadwal jika anak berhalangan hadir?
+                        </h4>
+                        <p class="text-gray-600 text-sm font-medium mt-2 pl-6 leading-relaxed">
+                            Bisa. Konfirmasi pembatalan atau perubahan jadwal kelas maksimal diajukan 1 hari sebelum
+                            sesi dimulai agar admin dapat menjadwal ulang ke sesi berikutnya.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Ultra-Vibrant & Colorful Science Footer Area -->
+        <footer id="contact"
+            class="bg-[#DCEBF6] text-gray-900 pt-20 pb-12 px-4 sm:px-6 lg:px-8 rounded-t-[3rem] relative overflow-hidden">
+
+            <!-- Blueprint Grid Pattern Background inside Footer -->
+            <div
+                class="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px] pointer-events-none">
+            </div>
+
+            <div class="max-w-7xl mx-auto space-y-16 relative z-10">
+
+                <!-- Main Footer Content Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 pb-12 border-b-4 border-gray-900">
+
+                    <!-- Column 1: Brand Info (With Logo Image) -->
+                    <div class="md:col-span-5 space-y-4">
+                        <div
+                            class="flex items-center gap-3 font-black text-2xl sm:text-3xl uppercase tracking-wider text-gray-900">
+                            <!-- Logo Image Cinta Sains -->
+                            <img src="assets/logo.png" alt="Logo Cinta Sains"
+                                class="w-10 h-10 object-contain rounded-xl">
+                            <div><span class="text-science-pink">Cinta</span> Sains</div>
+                        </div>
+                        <p class="text-gray-800 font-bold text-sm sm:text-base leading-relaxed max-w-md">
+                            Wadah eksplorasi sains interaktif yang memicu rasa ingin tahu, melatih kreativitas, dan
+                            membangun pola pikir kritis anak sejak dini.
+                        </p>
+                    </div>
+
+                    <!-- Column 2: Navigation Links -->
+                    <div class="md:col-span-3 space-y-4">
+                        <h5
+                            class="text-sm font-black uppercase tracking-wider text-white bg-science-orange inline-block px-3 py-1 rounded-xl shadow-sm">
+                            Navigasi</h5>
+                        <ul class="space-y-3 text-base font-black text-gray-800">
+                            <li><a href="#about" class="hover:text-science-pink transition-colors">Tentang Kami</a></li>
+                            <li><a href="#programs" class="hover:text-science-red transition-colors">Pilihan Kelas</a>
+                            </li>
+                            <li><a href="#how-to-join" class="hover:text-science-green transition-colors">Cara
+                                    Daftar</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3: Contact & Social Media Links -->
+                    <div class="md:col-span-4 space-y-5">
+                        <h5
+                            class="text-sm font-black uppercase tracking-wider text-white bg-science-pink inline-block px-3 py-1 rounded-xl shadow-sm">
+                            Hubungi & Ikuti Kami</h5>
+
+                        <!-- Main WhatsApp Action Card -->
+                        <a href="https://wa.me/6281510005211" target="_blank"
+                            class="flex items-center gap-3 bg-white p-3 rounded-2xl border-2 border-emerald-400 hover:scale-[1.02] transition-transform shadow-sm group block">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center text-xl">
+                                <i class="ri-whatsapp-fill"></i>
+                            </div>
+                            <div>
+                                <span
+                                    class="block text-[10px] font-black text-emerald-600 uppercase tracking-wider">WhatsApp
+                                    Kak Irfan</span>
+                                <span
+                                    class="text-base font-black text-gray-900 group-hover:text-emerald-600 transition-colors">+62
+                                    815-1000-5211
+                                </span>
+                            </div>
+                        </a>
+                        <a href="https://wa.me/628986818572" target="_blank"
+                            class="flex items-center gap-3 bg-white p-3 rounded-2xl border-2 border-emerald-400 hover:scale-[1.02] transition-transform shadow-sm group block">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center text-xl">
+                                <i class="ri-whatsapp-fill"></i>
+                            </div>
+                            <div>
+                                <span
+                                    class="block text-[10px] font-black text-emerald-600 uppercase tracking-wider">WhatsApp
+                                    Kak Bilal</span>
+                                <span
+                                    class="text-base font-black text-gray-900 group-hover:text-emerald-600 transition-colors">+62
+                                    898-6818-572
+                                </span>
+                            </div>
+                        </a>
+
+                        <!-- Colorful Social Media Grid Buttons -->
+                        <div class="space-y-2">
+                            <span class="block text-xs font-black uppercase tracking-wide text-gray-700 pl-1">Media
+                                Sosial Cinta Sains:</span>
+                            <div class="flex flex-wrap gap-2">
+                                <!-- Instagram -->
+                                <a href="https://instagram.com/cintasains" target="_blank"
+                                    class="flex items-center gap-2 bg-[#E1306C] hover:bg-[#c12356] text-white px-3 py-2 rounded-xl text-xs sm:text-sm font-black shadow-sm transition-all hover:-translate-y-0.5">
+                                    <i class="ri-instagram-line text-base"></i> Instagram
+                                </a>
+                                <!-- Facebook -->
+                                <a href="https://facebook.com/cintasains" target="_blank"
+                                    class="flex items-center gap-2 bg-[#1877F2] hover:bg-[#145dbb] text-white px-3 py-2 rounded-xl text-xs sm:text-sm font-black shadow-sm transition-all hover:-translate-y-0.5">
+                                    <i class="ri-facebook-box-fill text-base"></i> Facebook
+                                </a>
+                                <!-- YouTube -->
+                                <a href="https://youtube.com/@cintasains" target="_blank"
+                                    class="flex items-center gap-2 bg-[#FF0000] hover:bg-[#cc0000] text-white px-3 py-2 rounded-xl text-xs sm:text-sm font-black shadow-sm transition-all hover:-translate-y-0.5">
+                                    <i class="ri-youtube-fill text-base"></i> YouTube
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Copyright Block -->
+                <div
+                    class="flex flex-col sm:flex-row items-center justify-between text-xs sm:text-sm font-black text-gray-600 gap-4">
+                    <div>
+                        &copy; 2026 Klub Cinta Sains. All rights reserved.
+                    </div>
+                    <div class="flex gap-6">
+                        <a href="#" class="hover:text-gray-900 transition-colors">Privacy Policy</a>
+                        <a href="#" class="hover:text-gray-900 transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </section>
+
+    <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuLinks = document.querySelectorAll('.mobile-menu-link');
+
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.removeAttribute('open');
+        });
+    });
+    </script>
+
+</body>
+</html>

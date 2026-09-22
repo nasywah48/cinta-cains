@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-science-red: #EE1826;
+  --color-science-pink: #ED028D;
+  --color-science-orange: #F05829;
+  --color-science-lightblue: #23AAE2;
+  --color-science-amber: #F2941B;
+  --color-science-green: #00A652;
+  --color-science-yellow: #FEF102;
+  --color-science-darkgreen: #056A3B;
+}
